@@ -1,0 +1,214 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/slick-carousel/slick/slick";
+@import "../../node_modules/reset-css/reset";
+@import "../../node_modules/magnific-popup/dist/magnific-popup";
+@import "../css/fonts.css";
+@import "../css/icons.css";
+
+$text-color: #FFFFFF;
+$font_f    :Post-No-Bills-Jaffna-SemiBold;
+$font_s    :Playfair Display Bold;
+
+.container-header {
+    background-image   : url(../img/header_image.png);
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    height             : 100vh;
+}
+
+.container {
+    width     : 100%;
+    box-sizing: border-box;
+}
+
+header {
+    position : fixed;
+    left     : 0;
+    right    : 0;
+    width    : 100%;
+    margin   : 0 auto;
+    max-width: 1100px;
+    transition: all ease 0.5s;
+
+    .logo {
+        padding-top: 30px;
+        float      : left;
+
+        h1 {
+            font-family: $font_s;
+            font-style : normal;
+            font-weight: 600;
+            font-size  : 36px;
+            line-height: 54px;
+            color      : $text-color;
+        }
+
+        h2 {
+            font-family   : $font_f;
+            font-style    : normal;
+            font-weight   : normal;
+            font-size     : 12px;
+            line-height   : 14px;
+            color         : $text-color;
+            letter-spacing: 0.12em;
+        }
+    }
+
+    nav {
+        float      : right;
+        padding-top: 55px;
+        transition: .5s;
+
+        ul {
+            margin : 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                :hover {
+                    color: fuchsia;
+                }
+
+                a {
+                    font-family    : $font_f;
+                    color          : $text-color;
+                    font-style     : normal;
+                    font-weight    : normal;
+                    font-size      : 14px;
+                    line-height    : 16px;
+                    letter-spacing : 0.05em;
+                    height         : 50px;
+                    line-height    : 50px;
+                    padding        : 0 20px;
+                    text-decoration: none;
+                    display        : block;
+                }
+            }
+        }
+    }
+
+}
+.black{
+    background: red;
+    border: 1px solid black;
+    border-radius: 30px 30px 15px 15px;
+   
+   
+}
+.menu-toggle {
+    color      : #fff;
+    line-height: 50px;
+    font-size  : 24px;
+    cursor     : pointer;
+    display    : none;
+    float      : right;
+}
+
+.header_text {
+
+    padding-top: 300px;
+    text-align : center;
+    font-family: $font_s;
+    font-weight: bold;
+    font-size  : 48px;
+    line-height: 64px;
+    color      : #D4C17F;
+}
+
+.tel_and_address {
+    display        : flex;
+    justify-content: space-evenly;
+    padding-top    : 280px;
+    font-style     : normal;
+    font-weight    : normal;
+    font-size      : 18px;
+    line-height    : 21px;
+    text-align     : center;
+    font-family    : $font_s;
+    color          : $text-color;
+
+    .address {
+        display: flex;
+
+        i {
+            padding-right: 20px;
+        }
+    }
+
+    .phone {
+        display: flex;
+
+        i {
+            padding-right: 20px;
+        }
+    }
+}
+
+/**container2**/
+
+
+.information_for_complex {
+    background-color: #242B33;
+    height          : 100vh;
+
+    .information_for_complex-items {
+        padding-top    : 120px;
+        display        : flex;
+        justify-content: space-between;
+        margin         : 0 auto;
+        max-width      : 1100px;
+        i{
+            font-size: 60px;
+            color      : #D4C17F;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width: 991px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header nav {
+        position  : absolute;
+        width     : 100%;
+        height    : 100vh;
+        top       : 50px;
+        left      : -100%;
+        transition: 0.5s;
+
+    }
+
+    .active {
+        left      : 0;
+        width     : 100%;
+        height    : 100vh;
+        background: rgb(75, 79, 83);
+        background: linear-gradient(266deg, rgba(75, 79, 83, 1) 29%, rgba(212, 193, 127, 1) 100%);
+        opacity   : 0.5;
+    }
+
+    header nav ul {
+        display   : block;
+        text-align: center;
+    }
+
+    header nav ul a {
+        border-bottom: 1px solid black;
+    }
+}

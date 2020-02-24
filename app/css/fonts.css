@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Post-No-Bills-Jaffna-SemiBold';
+    src:url('../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+}
