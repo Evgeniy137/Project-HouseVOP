@@ -1014,10 +1014,16 @@ header nav ul li a {
   display: block;
 }
 
-.black {
-  background: red;
-  border: 1px solid black;
-  border-radius: 30px 30px 15px 15px;
+.black .logo {
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+.black nav {
+  padding-top: 0px;
+  border: 2px solid #d4c17f;
+  border-radius: 20px;
+  background: linear-gradient(266deg, #4b4f53 29%, #d4c17f 100%);
 }
 
 .menu-toggle {
