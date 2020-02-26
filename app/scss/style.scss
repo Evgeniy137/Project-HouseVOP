@@ -248,6 +248,7 @@ header {
 .popup-link :hover {
     box-shadow: 0px 0px 110px 41px rgba(212, 193, 127, 1);
 }
+
 /**слайдер**/
 .slider-item {
     img {
@@ -271,28 +272,99 @@ header {
 }
 
 .slick-arrow {
-    border-radius: 50px;
-    border: 2px solid black;
+    border-radius      : 50px;
+    border             : 2px solid black;
     width              : 50px;
     height             : 50px;
     font-size          : 0px;
     background-position: center;
     background-repeat  : no-repeat;
-    
+
 }
 
 .slick-next {
     background-image: url(../icons/right.svg);
 }
+
 .slick-prev {
     background-image: url(../icons/left.svg);
 }
 
+/**container4**/
+.form {
+    background-image   : url(../img/backround_container.png);
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
 
+    .form_registration {
+        max-width      : 1100px;
+        margin         : 0 auto;
+        display        : flex;
+        justify-content: space-evenly; 
+        flex-flow      : row wrap;
 
+        .form_registration-text {
+            padding-top: 180px;
 
+            h2 {
+                font-family: $font_s;
+                font-weight: bold;
+                font-size  : 36px;
+                line-height: 48px;
+                color      : #D4C17F;
+            }
 
+            p {
+                padding-top: 50px;
+                font-family: $font_s;
+                font-style : normal;
+                font-weight: normal;
+                font-size  : 16px;
+                line-height: 24px;
+                color      : $text-color;
+            }
+        }
+    }
+}
 
+.form_registration-item {
+    padding-top: 200px;
+
+    input {
+        width      : 210px;
+        height     : 50px;
+        background : #FFFFFF;
+        opacity    : 0.2;
+        font-family: $font_s;
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 14px;
+        line-height: 27px;
+    }
+}
+
+::placeholder {
+    color: red;
+}
+
+.name_inp {
+    margin: 50px;
+}
+
+.info_inp {
+    font-family: $font_s;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 11px;
+    line-height: 16px;
+    color: $text-color;
+    width: 210px;
+    height: 50;
+}
+.button_form{
+   width: 210px;
+}
 
 
 

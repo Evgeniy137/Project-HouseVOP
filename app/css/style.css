@@ -1198,6 +1198,99 @@ header nav ul li a {
   background-image: url(../icons/left.svg);
 }
 
+/**container4**/
+.form {
+  background-image: url(../img/backround_container.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form .form_registration {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.form .form_registration .form_registration-text {
+  padding-top: 180px;
+}
+
+.form .form_registration .form_registration-text h2 {
+  font-family: Playfair Display Bold;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
+}
+
+.form .form_registration .form_registration-text p {
+  padding-top: 50px;
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.form_registration-item {
+  padding-top: 200px;
+}
+
+.form_registration-item input {
+  width: 210px;
+  height: 50px;
+  background: #FFFFFF;
+  opacity: 0.2;
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+::-webkit-input-placeholder {
+  color: red;
+}
+
+::-moz-placeholder {
+  color: red;
+}
+
+:-ms-input-placeholder {
+  color: red;
+}
+
+::-ms-input-placeholder {
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}
+
+.name_inp {
+  margin: 50px;
+}
+
+.info_inp {
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  color: #FFFFFF;
+  width: 210px;
+  height: 50;
+}
+
+.button_form {
+  width: 210px;
+}
+
 @media (max-width: 991px) {
   .menu-toggle {
     display: block;
