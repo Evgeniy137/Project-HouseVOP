@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1145,7 +1146,7 @@ header nav ul li a {
   flex-flow: row wrap;
 }
 
-.photo_galery .popup-link img {
+.photo_galery img {
   box-shadow: 0px 0px 25px 11px rgba(0, 0, 0, 0.79);
   margin-top: 50px;
   -o-object-fit: cover;
@@ -1154,6 +1155,11 @@ header nav ul li a {
   height: 300px;
 }
 
+.popup-link :hover {
+  box-shadow: 0px 0px 110px 41px #d4c17f;
+}
+
+/**слайдер**/
 .slider-item img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1161,14 +1167,35 @@ header nav ul li a {
   height: 300px;
 }
 
-.mfp-bg {
-  text-align: center;
-  margin: 0 auto;
+.slider {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #101213;
 }
 
-.mfp-wrap {
-  width: 600px;
-  height: 400px;
+.slick-slider {
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 0px 110px 95px #101213;
+}
+
+.slick-arrow {
+  border-radius: 50px;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-next {
+  background-image: url(../icons/right.svg);
+}
+
+.slick-prev {
+  background-image: url(../icons/left.svg);
 }
 
 @media (max-width: 991px) {
