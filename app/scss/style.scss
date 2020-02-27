@@ -245,6 +245,11 @@ header {
     }
 }
 
+.mfp-close {
+    z-index: 1;
+    display: none;
+}
+
 .popup-link :hover {
     box-shadow: 0px 0px 110px 41px rgba(212, 193, 127, 1);
 }
@@ -330,7 +335,7 @@ header {
 
 .form_registration-item {
     padding-top: 200px;
-    
+
     input {
         width      : 210px;
         height     : 50px;
@@ -342,7 +347,7 @@ header {
         font-size  : 14px;
         line-height: 27px;
 
-      
+
     }
 }
 
@@ -359,6 +364,7 @@ header {
 .info_button {
     display        : flex;
     justify-content: space-between;
+    flex-flow      : row wrap;
 
     .info_inp {
         padding-left: 50px;
@@ -388,26 +394,27 @@ header {
 /**container5**/
 .container-video-map {
     background-color: #242B33;
+    margin          : 0 auto;
 
     .container-width-video-map {
-        max-width : 1100px;
-        margin    : 0 auto;
-        text-align: center;
+        max-width: 1100px;
+        margin   : 0 auto;
+
 
         .video_yt {
-            width      : 720px;
+            width      : 1100px;
             height     : 650px;
             padding-top: 180px;
         }
 
         .map-text {
-            text-align : left;
             padding-top: 180px;
             font-family: $font_s;
             font-weight: bold;
             font-size  : 36px;
             line-height: 48px;
             color      : #D4C17F;
+
         }
 
         .map_g {
@@ -421,7 +428,6 @@ header {
             font-size  : 36px;
             line-height: 48px;
             color      : #D4C17F;
-            text-align : left;
             padding-top: 180px;
         }
 
@@ -429,6 +435,7 @@ header {
             padding-top    : 60px;
             padding-bottom : 180px;
             display        : flex;
+            flex-flow      : row wrap;
             justify-content: space-between;
 
             h2 {
@@ -442,8 +449,8 @@ header {
             }
 
             input {
-                width     : 255px;
-                height    : 45px;
+                width      : 255px;
+                height     : 45px;
                 background : #FFFFFF;
                 opacity    : .2;
                 font-family: $font_s;
@@ -472,6 +479,7 @@ footer {
         padding-bottom : 30px;
         display        : flex;
         justify-content: space-between;
+        flex-flow      : row wrap;
 
         .footer-logo {
             h2 {
@@ -506,9 +514,11 @@ footer {
             ul {
                 li {
                     padding-top: 15px;
+
                     :hover {
                         color: fuchsia;
                     }
+
                     a {
                         color          : $text-color;
                         text-decoration: none;
@@ -529,13 +539,15 @@ footer {
             ul {
                 li {
                     padding-top: 15px;
+
                     :hover {
                         color: fuchsia;
                     }
+
                     a {
                         color          : #D4C17F;
                         text-decoration: none;
-                        
+
                     }
                 }
             }
@@ -559,40 +571,43 @@ input.inp_css[type="tel"]:hover,
 input.inp_css[type="text"]:hover {
     opacity: .8;
 }
+
 input.inp_css[type="tel"]:focus,
 input.inp_css[type="text"]:focus {
-    opacity: .8;
-    box-shadow : 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 33px 11px rgba(0, 0, 0, 0);
-}
-button:hover{
-    box-shadow : 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 33px 11px rgba(0, 0, 0, 0);
+    opacity   : .8;
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 33px 11px rgba(0, 0, 0, 0);
 }
 
+button:hover {
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 33px 11px rgba(0, 0, 0, 0);
+}
 
 
+/**media**/
+@media screen and (max-width: 1100px) {
+    .container-width-video-map {
+        margin    : 0 auto;
+        text-align: center;
 
+        .video_yt {
+            max-width : 700px;
+            max-height: 700px;
+        }
 
+        .map-text {
+            text-align: center;
+            margin    : 0 auto;
 
+        }
+    }
 
+    .map_g {
+        max-width : 300px;
+        max-height: 300px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 991px) {
+@media screen and (max-width: 950px) {
     .menu-toggle {
         display: block;
     }
@@ -640,5 +655,100 @@ button:hover{
         padding-top: 20px;
     }
 
-    .popup-link img {}
+    .popup-link img {
+        max-width : 300px;
+        max-height: 300px;
+    }
+
+    .form_registration-text {
+        text-align: center;
+    }
+
+    .form_registration-item {
+        text-align: center;
+
+        .info_button {
+            padding-top: 50px;
+
+            .info_inp {
+                display: none;
+            }
+
+            .button_form {
+                text-align: center;
+                margin-top: 50px;
+                margin    : 0 auto;
+            }
+        }
+
+    }
+
+
+
+    .container-width-video-map {
+        margin    : 0 auto;
+        text-align: center;
+
+        .video_yt {
+            max-width : 300px;
+            max-height: 300px;
+        }
+
+        .map-text {
+            text-align: center;
+            margin    : 0 auto;
+
+        }
+    }
+
+    .map_g {
+        max-width : 300px;
+        max-height: 300px;
+    }
+
+    .qestions-items {
+
+        h2 {
+            display: none;
+        }
+
+        input {
+            margin    : 0 auto;
+            margin-top: 30px;
+        }
+
+        button {
+            margin    : 0 auto;
+            margin-top: 30px;
+        }
+    }
+
+    .slick-arrow {
+        margin-top: 50px;
+    }
+
+    .slider {
+        max-width: 350px;
+
+        img {
+            width : 350px;
+            height: 250px;
+        }
+    }
+
+    .footer_items {
+        .footer-logo {
+            display: none;
+        }
+    }
+
+    .footer-items-info {
+        text-align: center;
+        margin    : 0 auto;
+    }
+
+    .footer-contacts {
+        text-align: center;
+        margin    : 0 auto;
+    }
 }
