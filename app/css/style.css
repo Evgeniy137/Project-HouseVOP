@@ -1244,7 +1244,7 @@ header nav ul li a {
   width: 210px;
   height: 50px;
   background: #FFFFFF;
-  opacity: 0.2;
+  opacity: .2;
   font-family: Playfair Display Bold;
   font-style: normal;
   font-weight: normal;
@@ -1254,41 +1254,239 @@ header nav ul li a {
 
 ::-webkit-input-placeholder {
   color: red;
+  text-align: center;
 }
 
 ::-moz-placeholder {
   color: red;
+  text-align: center;
 }
 
 :-ms-input-placeholder {
   color: red;
+  text-align: center;
 }
 
 ::-ms-input-placeholder {
   color: red;
+  text-align: center;
 }
 
 ::placeholder {
   color: red;
+  text-align: center;
 }
 
 .name_inp {
   margin: 50px;
 }
 
-.info_inp {
+.info_button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_button .info_inp {
+  padding-left: 50px;
   font-family: Playfair Display Bold;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
   line-height: 16px;
   color: #FFFFFF;
-  width: 210px;
-  height: 50;
+  text-align: center;
 }
 
-.button_form {
+.info_button .button_form {
   width: 210px;
+  height: 50px;
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+  background: #D4C17F;
+}
+
+/**container5**/
+.container-video-map {
+  background-color: #242B33;
+}
+
+.container-video-map .container-width-video-map {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-video-map .container-width-video-map .video_yt {
+  width: 720px;
+  height: 650px;
+  padding-top: 180px;
+}
+
+.container-video-map .container-width-video-map .map-text {
+  text-align: left;
+  padding-top: 180px;
+  font-family: Playfair Display Bold;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
+}
+
+.container-video-map .container-width-video-map .map_g {
+  padding-top: 100px;
+}
+
+.container-video-map .container-width-video-map .qestions-text {
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #D4C17F;
+  text-align: left;
+  padding-top: 180px;
+}
+
+.container-video-map .container-width-video-map .qestions-items {
+  padding-top: 60px;
+  padding-bottom: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-video-map .container-width-video-map .qestions-items h2 {
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #E7E7E7;
+}
+
+.container-video-map .container-width-video-map .qestions-items input {
+  width: 255px;
+  height: 45px;
+  background: #FFFFFF;
+  opacity: .2;
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container-video-map .container-width-video-map .qestions-items button {
+  width: 255px;
+  height: 50px;
+  background: #D4C17F;
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #2D343C;
+}
+
+footer .footer_items {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_items .footer-logo h2 {
+  font-family: Post-No-Bills-Jaffna-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+footer .footer_items .footer-logo h3 {
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+
+footer .footer_items .footer-items-info {
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+footer .footer_items .footer-items-info ul li {
+  padding-top: 15px;
+}
+
+footer .footer_items .footer-items-info ul li :hover {
+  color: fuchsia;
+}
+
+footer .footer_items .footer-items-info ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .footer_items .footer-contacts {
+  font-family: Playfair Display Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+footer .footer_items .footer-contacts ul li {
+  padding-top: 15px;
+}
+
+footer .footer_items .footer-contacts ul li :hover {
+  color: fuchsia;
+}
+
+footer .footer_items .footer-contacts ul li a {
+  color: #D4C17F;
+  text-decoration: none;
+}
+
+footer .footer_items .footer-contacts .footer-contacts-icons {
+  padding-top: 20px;
+}
+
+footer .footer_items .footer-contacts .footer-contacts-icons a {
+  padding-right: 20px;
+  font-size: 30px;
+  color: #D4C17F;
+  text-decoration: none;
+}
+
+input.inp_css[type="tel"]:hover,
+input.inp_css[type="text"]:hover {
+  opacity: .8;
+}
+
+input.inp_css[type="tel"]:focus,
+input.inp_css[type="text"]:focus {
+  opacity: .8;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 33px 11px rgba(0, 0, 0, 0);
+}
+
+button:hover {
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 33px 11px rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 991px) {

@@ -120,21 +120,82 @@
             <div class="form_registration-text">
                 <h2>Хотите посмотреть?</h2>
                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br> вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов <br> на латинице с начала XVI века. В то время некий безымянный <br> печатник
+                    стандартной "рыбой" для текстов <br> на латинице с начала XVI века. В то время некий безымянный <br>
+                    печатник
                     создал большую коллекцию размеров и форм шрифтов,<br> используя Lorem Ipsum для распечатки обрацов.
                 </p>
             </div>
             <div class="form_registration-item">
-                <input class="name_inp" type="name" placeholder="Ваше имя">
-                <input class="number_inp" type="tel" placeholder="Ваш телефон">
-                <div class="info_inp">
-                    Мы никому не передаем ваши данные.<br>
-                    И не сохраняем ваш номер в базу.
+                <input class="name_inp inp_css" type="text" placeholder="Ваше имя">
+                <input class="number_inp inp_css" type="tel" placeholder="Ваш телефон">
+                <div class="info_button">
+                    <div class="info_inp">
+                        Мы никому не передаем ваши данные.<br>
+                        И не сохраняем ваш номер в базу.
+                    </div>
+                    <button type="button" class="button_form">Посмотреть район</button>
                 </div>
-                <button type="button" class="button_form">Посмотреть район</button>
             </div>
         </div>
     </div>
+    <div class="container container-video-map">
+        <div class="container-width-video-map">
+            <iframe class="video_yt" src="https://www.youtube.com/embed/RqIbsCYY3uI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <div class="map-text">Район на карте</div>
+            <iframe class="map_g"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68778717937!2d30.252512926136006!3d50.40169905110281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1582809194368!5m2!1suk!2sua"
+                width="1100" height="358" frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
+            <div class="qestions-text">Есть вопросы?</div>
+            <div class="qestions-items">
+                <h2>Мы никому не передаем ваши данные. <br>
+                    И не сохраняем ваш номер в базу.
+                </h2>
+                <input class="inp_css" type="text" placeholder="Ваше имя">
+                <input class="inp_css" type="tel" placeholder="Ваш телефон">
+                <button class="btn" type="submit">Посмотреть район</button>
+            </div>
+        </div>
+    </div>
+    <footer class="container ">
+        <div class="footer_items">
+            <div class="footer-logo">
+                <h2>HouseVOP</h2>
+                <h3>ЖИЛОЙ КОМПЛЕКС</h3>
+            </div>
+            <div class="footer-items-info">
+                <ul>
+                    <li><a href="#"> О комплексе</a> </li>
+                    <li><a href="#">Район</a> </li>
+                    <li><a href="#">Каталог квартир</a> </li>
+                    <li><a href="#">Ипотека</a> </li>
+                    <li><a href="#">Контакты</a> </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <ul>
+                    <li>Адрес:<a href="#"> Наб. реки Фонтанки 10-15</a></li>
+                    <li>Телефон:<a href="#">8 (812) 123-45-67</a> </li>
+                    <li>Отдел продаж:<a href="#"> 10:00 - 20:00</a></li>
+                    <li>E-mail: <a href="#">vip@housevip.ru</a> </li>
+                </ul>
+                <div class="footer-contacts-icons">
+                    <a href="#" class="icon-youtube-play"></a>
+                    <a href="#" class="icon-vk"></a>
+                    <a href="#" class="icon-facebook"></a>
+                    <a href="#" class="icon-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
 
 
 
@@ -142,8 +203,7 @@
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/scripts.min.js"></script>
-    <script>document.write('<script src="http://' + (location.host ||
-            'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 
